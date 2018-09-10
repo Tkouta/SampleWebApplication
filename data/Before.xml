@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<dataset>
+    <!--
+        データセット用のXMLでは数値データも""で囲む
+        DATEやTIMESTAMP型の日付は「-」つなぎで指定する
+    -->
+    <EMP5
+            ID="1"
+            NAME="scott"
+            AGE="22"
+            SALARY="200000"
+            JOB_TYPE="employee"
+            HIREDATE="12:34:56"
+            DEPARTMENT_ID="1"
+    />
+</dataset>
