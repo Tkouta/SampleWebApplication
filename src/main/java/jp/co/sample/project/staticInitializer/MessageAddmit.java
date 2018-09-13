@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.staticInitializer;
+package jp.co.sample.project.staticInitializer;
 
 /**
  *
@@ -15,5 +15,5 @@ public class MessageAddmit {
         StringBuilder profile = Initializer.message();
         System.out.println( profile + "は、staticイニシャライザについて理解しました。" );
     }
-    
+
 }

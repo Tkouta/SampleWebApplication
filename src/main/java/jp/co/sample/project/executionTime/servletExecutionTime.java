@@ -3,16 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.executionTime;
+package jp.co.sample.project.executionTime;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -39,23 +37,23 @@ public class servletExecutionTime extends countTime {
             /* TODO output your page here. You may use following sample code. */
             // 開始時刻を取得
             Date startDate = new Date();
-            
+
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>サーブレット実行時間</title>");            
+            out.println("<title>サーブレット実行時間</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>ここは、サーブレットの実行時間をログに出力します。</h1>");
             out.println("<h1>時間の変化をわかりやすくするため、少し時間をおいてからログに出力します。</h1>");
             out.println("</body>");
             out.println("</html>");
-            
+
             Thread.sleep(3000);
-            
+
             // 終了時刻を取得
             Date endDate = new Date();
-            
+
             getTime(startDate, endDate);
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.executionTime;
+package jp.co.sample.project.executionTime;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -41,7 +42,7 @@ public class countTime extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet countTime</title>");            
+            out.println("<title>Servlet countTime</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet countTime at " + request.getContextPath() + "</h1>");
@@ -88,7 +89,7 @@ public class countTime extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-    
+
     public void getTime(Date startDate, Date endDate){
         PrintWriter logWriter = null;
         try{

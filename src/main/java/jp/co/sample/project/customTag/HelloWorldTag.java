@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.customTag;
+package jp.co.sample.project.customTag;
 
-import javax.servlet.jsp.PageContext;
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.tagext.Tag;
 import java.io.IOException;
- 
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.PageContext;
+import javax.servlet.jsp.tagext.Tag;
+
 public class HelloWorldTag implements Tag{
     private PageContext pageContext=null;
     private Tag parentTag=null;

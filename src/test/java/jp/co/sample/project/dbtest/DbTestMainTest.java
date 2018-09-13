@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.dbtest;
+package jp.co.sample.project.dbtest;
 
 
 import java.io.File;

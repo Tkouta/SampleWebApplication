@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : profile
     Created on : 2018/07/10, 18:59:17
     Author     : 康太
@@ -7,7 +7,7 @@
 <%@page import="java.text.ParseException"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
-<%@page import="java.util.Optional"%>
+<%-- <%@page import="java.util.Optional"%>--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.staticInitializer;
+package jp.co.sample.project.staticInitializer;
 
 /**
  *
@@ -11,10 +11,10 @@ package jp.co.hitachi.justware.staticInitializer;
  */
 public class Age {
     public static Integer age = 23;
-    
+
     public static Integer getAge(){
         System.out.println("年齢をreturnします。");
         return age;
     }
-    
+
 }

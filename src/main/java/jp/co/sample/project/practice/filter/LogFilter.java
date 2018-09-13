@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.practice.filter;
+package jp.co.sample.project.practice.filter;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -27,14 +28,14 @@ import javax.servlet.annotation.WebFilter;
 public class LogFilter implements Filter {
     public void init(FilterConfig config){
     }
-    
+
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
         PrintWriter logWriter = null;
-        
+
         try{
             Date servletStart = new Date();
             Date servletEnd = null;
-            
+
             File logFile = new File("C:/Users/康太/Documents/NetBeansProjects/PracticeProject/logs");
             logFile.createNewFile();
             FileWriter logFileWriter = new FileWriter("C:/Users/康太/Documents/NetBeansProjects/PracticeProject/logs/filter.log", true);
@@ -51,10 +52,10 @@ public class LogFilter implements Filter {
         }finally{
             logWriter.close();
         }
-        
+
     }
-    
+
     public void destroy(){
     }
-    
+
 }

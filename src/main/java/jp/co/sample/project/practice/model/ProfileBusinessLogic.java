@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.practice.model;
+package jp.co.sample.project.practice.model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -14,7 +14,7 @@ import java.util.Date;
  * @author 康太
  */
 public class ProfileBusinessLogic {
-    
+
     public static Integer ageAddmit( String birthDay ){
         Date today = new Date();
         Date birthday = null;
@@ -36,5 +36,5 @@ public class ProfileBusinessLogic {
         }
         return age;
     }
-    
+
 }

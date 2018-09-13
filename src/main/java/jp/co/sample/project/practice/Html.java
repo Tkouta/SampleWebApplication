@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.practice;
+package jp.co.sample.project.practice;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,7 +38,7 @@ public class Html extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Html</title>");            
+            out.println("<title>Servlet Html</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Html at " + request.getContextPath() + "</h1>");

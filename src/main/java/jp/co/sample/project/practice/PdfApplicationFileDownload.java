@@ -3,19 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jp.co.hitachi.justware.practice;
+package jp.co.sample.project.practice;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import org.apache.commons.io.IOUtils;
 
 /**
@@ -37,10 +38,10 @@ public class PdfApplicationFileDownload extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("application/force-download");
-        
+
         InputStream in = new FileInputStream( new File("D:/PDFFolder/SamplePDF.pdf") );
         OutputStream out = response.getOutputStream();
-        
+
         IOUtils.copy(in, out);
     }
 
