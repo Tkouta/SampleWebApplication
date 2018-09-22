@@ -18,13 +18,12 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
 
 /**
  *
  * @author 康太
  */
-@WebFilter("/*")
+//@WebFilter("/*")
 public class LogFilter implements Filter {
     public void init(FilterConfig config){
     }

@@ -13,7 +13,7 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>commons-io</groupId>
@@ -32,6 +32,22 @@
             <artifactId>lombok</artifactId>
             <version>1.14.4</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.dbunit</groupId>
+            <artifactId>dbunit</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901-1.jdbc4</version>
         </dependency>
     </dependencies>
 
@@ -62,6 +78,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>2.6</version>
                 <executions>
+                <!--
                     <execution>
                         <phase>validate</phase>
                         <goals>
@@ -80,6 +97,7 @@
                             </artifactItems>
                         </configuration>
                     </execution>
+                    -->
                 </executions>
             </plugin>
         </plugins>
